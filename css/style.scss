@@ -1,40 +1,133 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 $red: hsl(0, 100%, 74%);
 $Green: hsl(154, 59%, 51%);
-$Blue: hsl(248, 32%, 49%);
-$Dark-Blue: hsl(249, 10%, 26%);
-$Grayish-Blue: hsl(246, 25%, 77%);
+$Blue: rgb(96, 85, 165);
+$Dark-Blue: #3e3c49;
+$Grayish-Blue: #b9b6d3;
 html {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
 }
+
 @media screen and (min-width: 375px) and (max-width: 425px) {
-  main {
-    div#information-card {
-      h1 {
+  body {
+    background: no-repeat url(/images/bg-intro-mobile.png), $red;
+    background-size: contain;
+    width: 375px;
+    height: 1000px;
+
+    main {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-content: center;
+      justify-content: space-between;
+      margin-left: 24px;
+      margin-right: 24px;
+      div#information-card {
+        width: 327px;
+        height: 226px;
+        color: white;
+        margin-top: 88px;
+        h1 {
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 36px;
+          letter-spacing: -0.29px;
+          height: 80px;
+          margin: 0px;
+        }
+        p {
+          height: 130px;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 26px;
+          margin: 0px;
+        }
       }
-      p {
-      }
-    }
-    div#try-card {
-      form {
+      div#try-card {
+        display: flex;
+        flex-direction: column;
+        width: 327px;
+        height: 554px;
+        margin-top: 64px;
         .try-information {
+          background-color: #5e54a4;
+          height: 88px;
+          color: white;
+          box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+          border-radius: 10px;
+          display: flex;
+          justify-content: center;
           p {
+            width: 194px;
+            height: 52px;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 26px;
+            letter-spacing: 0.27px;
           }
         }
-        .try-formaulair {
+        form {
+          display: flex;
+          flex-direction: column;
+          background-color: white;
+          border-radius: 10px;
+          box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+          margin-top: 24px;
+          width: 327px;
+          height: 442px;
+          align-items: center;
           input {
+            border: 1px solid #dedede;
+            box-sizing: border-box;
+            border-radius: 5px;
+            width: 279px;
+            height: 56px;
+            margin-bottom: 16px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 26px;
+            letter-spacing: 0.25px;
+            color: $Dark-Blue;
+            opacity: 75%;
+            &[value] {
+              padding-left: 19.41px;
+            }
+            &:first-child {
+              margin-top: 24px;
+            }
           }
+
           input#submit {
+            background-color: $Green;
+            color: white;
+            margin-bottom: 8px;
+            text-transform:uppercase ;
+            &[value] {
+              padding-left: 0;
+            }
+          }
+
+          p.click-information {
+            width: 249px;
+            height: 42px;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 21px;
+            text-align: center;
+            color: $Grayish-Blue;
+            span {
+              color: $red;
+            }
           }
         }
-      }
-      p.click-information {
       }
     }
   }
 }
+
 @media screen and (min-width: 425px) and (max-width: 768px) {
   main {
     background: green;

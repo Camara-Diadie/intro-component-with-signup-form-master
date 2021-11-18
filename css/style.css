@@ -5,6 +5,148 @@ html {
   padding: 0;
 }
 
+@media screen and (min-width: 375px) and (max-width: 425px) {
+  body {
+    background: no-repeat url(/images/bg-intro-mobile.png), #ff7a7a;
+    background-size: contain;
+    width: 375px;
+    height: 1000px;
+  }
+  body main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  body main div#information-card {
+    width: 327px;
+    height: 226px;
+    color: white;
+    margin-top: 88px;
+  }
+  body main div#information-card h1 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.29px;
+    height: 80px;
+    margin: 0px;
+  }
+  body main div#information-card p {
+    height: 130px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0px;
+  }
+  body main div#try-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 327px;
+    height: 554px;
+    margin-top: 64px;
+  }
+  body main div#try-card .try-information {
+    background-color: #5e54a4;
+    height: 88px;
+    color: white;
+    -webkit-box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+            box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main div#try-card .try-information p {
+    width: 194px;
+    height: 52px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.27px;
+  }
+  body main div#try-card form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+            box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+    margin-top: 24px;
+    width: 327px;
+    height: 442px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main div#try-card form input {
+    border: 1px solid #dedede;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 5px;
+    width: 279px;
+    height: 56px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.25px;
+    color: #3e3c49;
+    opacity: 75%;
+  }
+  body main div#try-card form input[value] {
+    padding-left: 19.41px;
+  }
+  body main div#try-card form input:first-child {
+    margin-top: 24px;
+  }
+  body main div#try-card form input#submit {
+    background-color: #38cc8c;
+    color: white;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+  body main div#try-card form input#submit[value] {
+    padding-left: 0;
+  }
+  body main div#try-card form p.click-information {
+    width: 249px;
+    height: 42px;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 21px;
+    text-align: center;
+    color: #b9b6d3;
+  }
+  body main div#try-card form p.click-information span {
+    color: #ff7a7a;
+  }
+}
+
 @media screen and (min-width: 425px) and (max-width: 768px) {
   main {
     background: green;
